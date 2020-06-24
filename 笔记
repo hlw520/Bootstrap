@@ -1,0 +1,35 @@
+1.emmet插件
+    html:5 或者 ！      生成html5的页面框架
+    .container          .生成类，默认是div
+    #root               生成id，默认是div
+    btn#btn01       
+    btn#btn$*5          生成序列号从1到5
+    btn.item@3*5        生成序列号从3开始，5个
+    ul>li.item$@-*5     >表示自标签创建，$@-*5 倒序生成5个对象
+    #root>.container>ul.red>li$*5{苹果}         {}表示展现的内容
+    #root+#app                                  +表示兄弟标签关系
+    (#root>p)+(.root>p)                         ()表示一个组
+    input:b                                     :表示同一标签下的分类
+
+2.UI前端框架
+    前端框架：Angular   react   vue
+    UI前端框架：Bootstrap
+               Element UI
+
+3.怎满装Bootstrap框架
+    1）在中文网中下载Bootstrap，把其中的css,js,font文件拷贝到项目下
+    2）建立h5网页，在网页中引入库文件
+    --引入Bootstrap样式
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    --引入Bootstrap所依赖的jQuery库
+    <script src="js/jquery-3.4.1.min.js"></script>
+    --引入Bootstrap库文件
+    <script src="js/bootstrap.min.js"></script>
+
+    注意：Bootstrap中的js插件依赖于jQuer，因此jQuery要在Bootstrap前引用
+    注意：我们也可以使用cdn链接来引入，由于用户一般浏览器端都会缓存图片等
+            因此，这种方式的引入，访问速度会快。
+
+4.容器
+    1）流体容器
+    2）固定容器
